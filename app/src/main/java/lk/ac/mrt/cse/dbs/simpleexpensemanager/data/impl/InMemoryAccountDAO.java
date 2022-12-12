@@ -52,7 +52,7 @@ public class InMemoryAccountDAO implements AccountDAO {
         if (accounts.containsKey(accountNo)) {
             return accounts.get(accountNo);
         }
-        String msg = "Account " + accountNo + " is invalid.";
+        String msg = "Account NO" + accountNo + " is invalid.";
         throw new InvalidAccountException(msg);
     }
 
